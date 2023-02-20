@@ -1,0 +1,296 @@
+body{
+    /* background-color: rgb(141, 137, 137);  */
+    margin :0;  
+    padding:0;
+    vertical-align: baseline;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input,button{
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+.inner{
+    flex: 1;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    z-index: 2;
+}
+.inner div>span{
+    margin: 30px;
+    display: flex;
+    font-size: 1.8em;
+    color: rgba(255,234,234,0.5) ;
+    transition: 0.5s;
+}
+.inner .sousuo .sou{
+    position: absolute;
+    top: 19px;
+    left: -190px;
+    display: flex;
+    width: 200px;
+    height: 60%;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 15px;
+    overflow: hidden;
+    transform: translateX(200px);
+    opacity: 0;
+}
+.inner .sousuo .sou input{
+    width: 80%;
+    height: 100%; 
+    background: rgba(255, 255, 255, 0.2); 
+    font-size: 1em;
+    padding: 0 10px;
+}
+.inner .sousuo .sou input::-webkit-input-placeholder{
+    color: rgba(255, 234, 234, 0.5);
+}
+.inner .sousuo .sou form{
+    width: 20%;
+}
+.inner .sousuo .sou form>button{
+    background: rgba(255, 255, 255, 0.25);
+}
+.inner .sou form>button>span{
+    font-size: 2em;
+    color: blueviolet;
+    line-height: 55px;
+}
+.inner .sousuo:hover .sou{
+    transform: translateX(0);
+}
+.inner .sousuo:hover .sou{
+    transition-delay: 0.4s;
+    opacity: 1;
+}
+.inner .wei{
+    position: absolute;
+    top: 1px;
+    left: -90px;
+    display: flex;
+    width: 90px;
+    height: 90px;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 3px;
+    overflow: hidden;
+    transform: translateX(200px);
+    opacity: 0;
+}
+.inner .wei img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.inner .weixin:hover .wei{
+    transform: translateX(0);
+}
+.inner .weixin:hover .wei{
+    transition-delay: 0.4s;
+    opacity: 1;
+}
+.inner .qq{
+    position: absolute;
+    top: 1px;
+    left: -90px;
+    display: flex;
+    width: 90px;
+    height: 90px;
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 3px;
+    overflow: hidden;
+    transform: translateX(200px);
+    opacity: 0;
+}
+.inner .qq img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.inner .qq_main:hover .qq{
+    transform: translateX(0);
+}
+.inner .qq_main:hover .qq{
+    transition-delay: 0.4s;
+    opacity: 1;
+}
+.inner .nmb{
+    position: absolute;
+    top: 20px;
+    left: -90px;
+    display: flex;
+    background-color: rgba(255, 234, 234, 0.2);
+    width: 150px;
+    height: 60%;
+    line-height: 15px;
+    padding-left: 10px;
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.5s;
+    font-size: 1.2em;
+    transform: translateX(200px);
+    opacity: 0;
+}
+.inner .nmb p{
+    color: rgba(255, 234, 234, 0.5);
+}
+.inner .shouji:hover .nmb{
+    transform: translateX(-50px);
+}
+.inner .shouji:hover .nmb{
+    transition-delay: 0.4s;
+    opacity: 1;
+}
+.inner span:hover{
+    transform: scale(1.5);
+}
+
+.background{
+    /* background-color: red; */
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    min-width: 1000px;
+    z-index: -10;
+    /* width: 1366px; */
+    /* height: 766px; */
+}
+.background video{
+    width: 100%;
+    /* height: 100%; */
+}
+.top{
+    position: absolute;
+    /* background-color: red; */
+    width: 100px;
+    height: 100px;
+    top: 240px;
+    left: 715px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.top .logo{
+    transition: 1s;
+}
+.top .logo span{
+    font-size: 7em;
+    color: rgb(30, 30, 30);
+    transition: 1s;
+}
+.top .logo:hover {
+    transform: rotate(360deg);
+}
+.top .My_name span{
+    font-size: 2em;
+    color: rgb(30, 30, 30);
+    position: absolute;
+    margin-top: 20px;
+}
+
+.button{
+    position: absolute;
+    top: 430px;
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+}
+.button p{
+    /* text-align: center; */
+    position: absolute;
+    left: 705px;
+    color: rgb(36, 36, 36);
+}
+.button ul li{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 140px;
+    height: 55px;
+    border-radius: 55px;
+}
+.button ul .one span,.button ul .two span,.button ul .three span{
+	float: left;
+	width:40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	margin:8px 10px 0 10px;
+	box-shadow: 0 0 0 1px #000 inset;
+	transition:box-shadow 0.3s ease 0s;
+	font-weight: bold;
+	color:#000;
+}
+.button ul .one:hover span,.button ul .two:hover span,.button ul .three:hover span{
+	box-shadow: 0 0 0 20px #000 inset;
+	color: #ddd;
+} 
+.button ul li a{
+    line-height: 55px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.button ul li a:link{
+    color: blueviolet;
+}
+
+.button ul li a:hover{
+    font-size: 1.1em;
+    color: blueviolet;
+}
+.button ul li a:active{
+    color: azure;
+}
+.button .one{
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    transition:all 0.5s ease-in 0s;
+    opacity: 0;
+}
+.button .two{
+    position: absolute;
+    top: 260px;
+    left: 700px;
+    transition:all 0.5s ease-in 0s;
+    opacity: 0;
+}
+.button .three{
+    position: absolute;
+    top: 70px;
+    left: 1350px;
+    transition:all 0.5s ease-in 0s;
+    opacity: 0;
+}
+/* hover ************************/
+body:hover .button ul li.one{
+    position: absolute;
+    top: 70px;
+    left: 525px;
+    opacity: 1;
+}
+body:hover .two{
+    position: absolute;
+    top: 70px;
+    left: 700px;
+    opacity: 1;
+}
+body:hover .three{
+    position: absolute;
+    top: 70px;
+    left: 875px;
+    opacity: 1;
+}
+/* :hover ****************************/
